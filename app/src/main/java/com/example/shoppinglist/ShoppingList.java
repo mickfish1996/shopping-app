@@ -5,10 +5,6 @@ import java.util.HashMap;
 public class ShoppingList {
     HashMap<String, Integer> shoppingList = new HashMap<String, Integer>();
 
-    public static void main(String[] args){
-
-    }
-
     public ShoppingList(){
 
     }
