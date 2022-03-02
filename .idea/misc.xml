@@ -3,11 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/BYU-Idaho/Winter 2022/cse310/sprint04/app/src/main/res/layout/activity_add_to_list.xml" value="0.25" />
         <entry key="..\:/BYU-Idaho/Winter 2022/cse310/sprint04/app/src/main/res/layout/activity_main.xml" value="0.18802083333333333" />
-        <entry key="..\:/Michael/BYU Idaho/Winter 2022/CSE 310/sprint04/shopping-app/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.171" />
-        <entry key="..\:/Michael/BYU Idaho/Winter 2022/CSE 310/sprint04/shopping-app/app/src/main/res/layout/activity_add_to_list.xml" value="0.1" />
-        <entry key="..\:/Michael/BYU Idaho/Winter 2022/CSE 310/sprint04/shopping-app/app/src/main/res/layout/activity_display_list.xml" value="0.22916666666666666" />
-        <entry key="..\:/Michael/BYU Idaho/Winter 2022/CSE 310/sprint04/shopping-app/app/src/main/res/layout/activity_main.xml" value="0.165" />
       </map>
     </option>
   </component>

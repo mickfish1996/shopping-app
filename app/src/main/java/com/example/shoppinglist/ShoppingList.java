@@ -3,17 +3,17 @@ package com.example.shoppinglist;
 import java.util.HashMap;
 
 public class ShoppingList {
-    HashMap<String, Integer> shoppingList = new HashMap<String, Integer>();
+    HashMap<String, Boolean> shoppingList = new HashMap<String, Boolean>();
 
     public ShoppingList(){
 
     }
 
-    public void addToList(String item, int num){
+    public void addToList(String item, boolean num){
         shoppingList.put(item, num);
     }
 
-    public HashMap<String, Integer> getList(){
+    public HashMap<String, Boolean> getList(){
         return shoppingList;
     }
 }
