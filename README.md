@@ -13,7 +13,9 @@
 
 * Android Studios
 
-{Describe the programming language that you used and any libraries.}
+The language that I used for this is Java, I used this because I did a Java sprint for my first sprint
+and so I know java going into it. I used the widget library because it has the buttons, and I used
+the view library to be able to use the event listener.
 
 # Useful Websites
 
@@ -24,6 +26,6 @@
 # Future Work
 
 {Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
+* Implement cloud database
 * Item 2
 * Item 3
