@@ -2,6 +2,7 @@ package com.example.shoppinglist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Application;
 import android.content.Intent;
 import android.widget.Button;
 import android.view.View;
@@ -12,6 +13,8 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button displayList, addToList;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,3 +51,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 }
+
