@@ -12,7 +12,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button displayList, addToList;
+    Button displayList;
 
 
 
@@ -21,15 +21,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         displayList = findViewById(R.id.viewList);
-        addToList = findViewById(R.id.addList);
 
         displayList.setOnClickListener(this);
-        addToList.setOnClickListener(this);
-    }
 
-    private void showList(){
-        Intent intent = new Intent(this, DisplayList.class);
-        startActivity(intent);
     }
 
     private void addList() {
@@ -37,16 +31,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-
     @Override
     public void onClick(View v)
     {
         switch (v.getId()) {
-            case R.id.addList:
-                addList();
-                break;
             case R.id.viewList:
-                showList();
+                addList();
                 break;
         }
     }
