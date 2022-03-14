@@ -24,6 +24,7 @@ public class AddToList extends AppCompatActivity implements View.OnClickListener
     EditText textBox;
     String text;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,11 +42,29 @@ public class AddToList extends AppCompatActivity implements View.OnClickListener
     @Override
     public void onClick(View v)
     {
-        this.shoppingList.addToList(text);
-        textBox.setText("");
-        createCheckBoxes();
-    }
+        if(shoppingList.getList().containsKey(textBox.getText().toString())) {
+            this.shoppingList.addToList(textBox.getText().toString());
+            createNewCheckBoxes(textBox.getText().toString(), shoppingList.getList().size());
+            textBox.setText("");
+        }
 
+    }
+    private void createNewCheckBoxes(String key, int size){
+
+        LinearLayout parentLayout = (LinearLayout) findViewById(R.id.checkboxes);
+
+        CheckBox checkBox = new CheckBox(this);
+        checkBox.setId(size + 1);
+        checkBox.setText(key);
+
+        LinearLayout.LayoutParams checkParams = new LinearLayout.LayoutParams(ActionBar.LayoutParams.WRAP_CONTENT, ActionBar.LayoutParams.WRAP_CONTENT);
+        checkParams.setMargins(10,10,10,10);
+        checkParams.gravity = Gravity.LEFT;
+
+        parentLayout.addView(checkBox, checkParams);
+
+
+    }
     private void createCheckBoxes() {
         LinearLayout parentLayout = (LinearLayout) findViewById(R.id.checkboxes);
         int id = 1;
@@ -56,15 +75,14 @@ public class AddToList extends AppCompatActivity implements View.OnClickListener
 
             checkBox.setId(id);
 
-            String text = set.getKey();
             boolean checked = set.getValue();
 
-            System.out.println(text);
+            System.out.println(set.getKey());
             checkBox.setTextColor(Color.BLACK);
             if (checked){
-                checkBox.setChecked(true);
-            } else {
                 checkBox.setChecked(false);
+            } else {
+                checkBox.setChecked(true);
             }
 
             LinearLayout.LayoutParams checkParams = new LinearLayout.LayoutParams(ActionBar.LayoutParams.WRAP_CONTENT, ActionBar.LayoutParams.WRAP_CONTENT);
