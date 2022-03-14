@@ -53,9 +53,19 @@ public class AddToList extends AppCompatActivity implements View.OnClickListener
         for (HashMap.Entry<String, Boolean> set :
              list.entrySet()){
             CheckBox checkBox = new CheckBox(this);
+
             checkBox.setId(id);
-            checkBox.setText(set.getKey().toString());
+
+            String text = set.getKey();
+            boolean checked = set.getValue();
+
+            System.out.println(text);
             checkBox.setTextColor(Color.BLACK);
+            if (checked){
+                checkBox.setChecked(true);
+            } else {
+                checkBox.setChecked(false);
+            }
 
             LinearLayout.LayoutParams checkParams = new LinearLayout.LayoutParams(ActionBar.LayoutParams.WRAP_CONTENT, ActionBar.LayoutParams.WRAP_CONTENT);
             checkParams.setMargins(10,10,10,10);
