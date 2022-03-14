@@ -42,9 +42,11 @@ public class AddToList extends AppCompatActivity implements View.OnClickListener
     @Override
     public void onClick(View v)
     {
-        if(shoppingList.getList().containsKey(textBox.getText().toString())) {
+        if(!(shoppingList.getList().containsKey(textBox.getText().toString()))) {
             this.shoppingList.addToList(textBox.getText().toString());
             createNewCheckBoxes(textBox.getText().toString(), shoppingList.getList().size());
+            textBox.setText("");
+        } else {
             textBox.setText("");
         }
 
