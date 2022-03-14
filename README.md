@@ -26,6 +26,6 @@ the view library to be able to use the event listener.
 # Future Work
 
 {Make a list of things that you need to fix, improve, and add in the future.}
-* Implement cloud database
+* Implement cloud database/ way to store items on device
 * Item 2
 * Item 3
