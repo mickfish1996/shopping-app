@@ -4,7 +4,7 @@ This app is a shopping list that will allow the users to add items to the list, 
 
 I decided to create this app because it was a good way to learn how to dynamically create a check list and add items from a edit field into a hash map and show a list.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/GJR-BNRdkWg)
 
 ## Development Environment
 * Android Studios
